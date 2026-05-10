@@ -52,9 +52,10 @@ python dimension_swap.py
 ## 项目结构
 
 ```
-dimension_swap_project/
+dimension_swap/
 ├── dimension_swap.py    # 主程序
 ├── .gitignore           # Git忽略文件
+├── LICENSE              # MIT 许可证
 ├── README.md            # 本文件
 └── output/              # 输出目录（不纳入版本控制）
 ```

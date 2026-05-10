@@ -349,7 +349,7 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(self.log_text)
 
         # 默认输出目录
-        self.output_dir = os.path.join(os.path.expanduser("~"), "桌面", "dimension_swap_project", "output")
+        self.output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
         self.output_label.setText(self.output_dir)
         os.makedirs(self.output_dir, exist_ok=True)
 
