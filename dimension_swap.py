@@ -18,20 +18,20 @@ import sys
 import os
 import numpy as np
 import cv2
-from PyQt6.QtWidgets import (
+from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QPushButton, QComboBox, QFileDialog, QProgressBar,
     QTextEdit, QMessageBox, QGroupBox, QScrollArea
 )
-from PyQt6.QtCore import Qt, QThread, pyqtSignal
-from PyQt6.QtGui import QDragEnterEvent, QDropEvent
+from PySide6.QtCore import Qt, QThread, Signal
+from PySide6.QtGui import QDragEnterEvent, QDropEvent
 
 
 class DimensionSwapWorker(QThread):
-    progress = pyqtSignal(int)
-    log = pyqtSignal(str)
-    finished = pyqtSignal(str)
-    error = pyqtSignal(str)
+    progress = Signal(int)
+    log = Signal(str)
+    finished = Signal(str)
+    error = Signal(str)
 
     def __init__(self, input_path, output_dir, mode):
         super().__init__()

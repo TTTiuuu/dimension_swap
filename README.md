@@ -3,7 +3,7 @@
 视频维度互换特效制作工具 - 将视频的时间轴与空间轴进行互换，产生高维降维切片的视觉效果。
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
-![PyQt6](https://img.shields.io/badge/PyQt6-6.0+-green)
+![PySide6](https://img.shields.io/badge/PySide6-6.0+-green)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.0+-yellow)
 
 ## 功能特点
@@ -33,7 +33,7 @@
 ```bash
 conda create -n dimension_swap python=3.11 -y
 conda activate dimension_swap
-pip install opencv-python PyQt6 numpy
+pip install opencv-python PySide6 numpy
 ```
 
 ## 运行
@@ -46,7 +46,7 @@ python dimension_swap.py
 
 - Python 3.11+
 - OpenCV (cv2)
-- PyQt6
+- PySide6
 - NumPy
 
 ## 项目结构
